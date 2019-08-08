@@ -1,0 +1,117 @@
+/* Main Layout */
+.header, .main {
+  margin: 0 8rem;
+}
+/* Remove text-decoration from a tags which starts with "#" (navigation, go-up button) */
+[href^="#"] {
+  text-decoration: none;
+}
+/* Tablets and smaller devices */
+@media (max-width: 991.98px) {
+  .header, .main, .footer {
+    margin: 0 1rem;
+  }
+}
+
+
+/* 
+  Navigation
+*/
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav__item:not(:last-child) {
+  margin-right: 1rem;
+}
+.nav__logo {
+  display: flex;
+  margin-right: auto;
+}
+
+/* 
+  About Me
+*/
+.lead {
+  display: flex;
+  flex-direction: column;
+}
+.lead__avatar {
+  align-self: flex-start;
+}
+.lead__button {
+  align-self: flex-start;
+}
+.lead__content {
+  width: 50%;
+}
+.lead__overview {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* Tablets and smaller devices */
+@media (max-width: 991.98px) {
+  .lead__content {
+    width: 100%;
+  }
+}
+
+/* 
+  Skills
+ */
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill-card {
+  border: 1px solid red;
+  margin: 0.25rem;
+}
+
+/* 
+  Projects
+*/
+.my-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.project {
+  margin: 0.5rem;
+}
+
+/* 
+  Footer
+*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5rem;
+}
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__title {
+  text-align: center;
+}
+.go-up {
+  align-self: center;
+}
+
+/* Tablets and smaller devices */
+@media (max-width: 991.98px) {
+  .footer {
+    margin: 0 1rem;
+  }
+}
