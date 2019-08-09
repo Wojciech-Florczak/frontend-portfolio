@@ -1,4 +1,8 @@
 /* Main Layout */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .header,
 .main {
   margin: 0 8rem;
