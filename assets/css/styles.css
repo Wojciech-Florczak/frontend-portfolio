@@ -1,6 +1,13 @@
+/* Variables */
+:root {
+  --light-blue: #3c95ff;
+  --heavy-blue: #3773f4;
+  --sonic-silver: #757780;
+}
+
 /* Main Layout */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .header,
@@ -55,6 +62,7 @@ body {
   border-radius: 1.3rem;
   padding: 0.75rem 1.2rem;
   text-transform: uppercase;
+  color: var(--light-blue);
 }
 .lead__content {
   width: 50%;
@@ -96,7 +104,8 @@ body {
 }
 .skill-card__icon {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: var(--light-blue);
 }
 .skill-card__title {
   text-align: center;
@@ -111,6 +120,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.my-projects__title {
+  color: var(--heavy-blue);
+}
+.my-projects__subtitle {
+  color: var(--sonic-silver);
 }
 .projects-wrapper {
   display: flex;
@@ -131,12 +146,18 @@ body {
   flex-direction: column;
   margin-bottom: 5rem;
 }
+.contact-me__title {
+  color: var(--heavy-blue);
+}
+.contact-me__subtitle {
+  color: var(--sonic-silver);
+}
 .contact-form {
   display: flex;
   padding: 1rem;
   flex-direction: column;
   border-radius: 1rem;
-  border: 1px solid gray;
+  border: 1px solid var(--sonic-silver);
   width: 50%;
   font-size: 1.3rem;
 }
@@ -144,14 +165,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-input[type=text], input[type=email], textarea {
-  border: 1px solid gray;
-  border-radius: .3rem;
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid var(--sonic-silver);
+  border-radius: 0.3rem;
 }
-input[type=submit] {
-  padding: .5rem 1rem;
+input[type="submit"] {
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   margin-top: 1rem;
   align-self: center;
 }
@@ -183,14 +206,15 @@ input[type=submit] {
 .footer__title {
   margin-top: 3rem;
   text-align: center;
+  color: var(--heavy-blue);
 }
 .go-up {
   position: absolute;
   top: -16%;
-  color: white;
   font-size: 1.3rem;
   border-radius: 50%;
-  border: 3px solid blue;
+  border: 3px solid var(--light-blue);
+  color: var(--light-blue);
   background-color: #333333;
   padding: 1rem;
   align-self: center;
