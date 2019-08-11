@@ -10,19 +10,19 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.header,
-.main {
-  margin: 0 8rem;
-}
 /* Remove text-decoration from a tags which starts with "#" (navigation, go-up button) */
 [href^="#"] {
   text-decoration: none;
 }
+
+.section {
+  padding: 0 8rem;
+}
+
 /* Tablets and smaller devices */
 @media (max-width: 991.98px) {
-  .header,
-  .main {
-    margin: 0 1rem;
+  .section {
+    padding: 0 1rem;
   }
 }
 
@@ -33,7 +33,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 2rem 0 8rem 0;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
 }
 .nav__item:not(:last-child) {
   margin-right: 1rem;
@@ -44,12 +45,46 @@ body {
 }
 
 /* 
+  Banner
+*/
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  top: 0;
+  left: 0;
+  background-image: url('/assets/images/coder-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  z-index: -2;
+}
+.banner::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--light-blue);
+  opacity: 0.8
+}
+.banner-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 
   About Me
 */
+#about-me {
+  margin-bottom: 22rem;
+}
+
 .lead {
   display: flex;
   flex-direction: column;
-  margin-bottom: 6rem;
+  color: white;
 }
 .lead__avatar {
   align-self: flex-start;
@@ -92,6 +127,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 .skill-card {
   display: flex;
@@ -220,7 +257,7 @@ input[type="submit"] {
   align-self: center;
 }
 .nav-footer {
-  margin: 0;
+  padding: 0;
 }
 .nav-footer .nav__item {
   text-transform: uppercase;
