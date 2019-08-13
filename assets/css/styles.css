@@ -68,7 +68,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .nav__item, .nav__logo {
+  .nav__item,
+  .nav__logo {
     padding: 1rem;
   }
   .nav__logo {
@@ -126,9 +127,23 @@ body {
   flex-direction: column;
   color: white;
 }
-.lead__avatar {
-  align-self: flex-start;
+/* Wrapping avatar so photo always be centred vertically */
+.lead__avatar-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
   border-radius: 50%;
+}
+.lead__avatar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .lead__button {
   display: flex;
@@ -201,7 +216,10 @@ body {
   }
   .lead__avatar {
     align-self: center;
-    width: 10rem;
+  }
+  .lead__avatar-wrapper {
+    width: 150px;
+    height: 150px;
     order: 2;
   }
   .lead__button {
@@ -231,7 +249,7 @@ body {
 }
 /* For mobile devices */
 @media (max-width: 575.98px) {
-  .lead__avatar {
+  .lead__avatar-wrapper {
     order: 0;
   }
   .lead__content--info {
@@ -426,9 +444,10 @@ input[type="submit"]:hover {
 }
 /* For mobile devices */
 @media (max-width: 575.98px) {
-.nav-footer .nav__item {
-  padding: .75rem;  
-}
-.footer__content {
-  justify-content: center;
+  .nav-footer .nav__item {
+    padding: 0.75rem;
+  }
+  .footer__content {
+    justify-content: center;
+  }
 }
