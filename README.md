@@ -1,6 +1,6 @@
 # frontend-portfolio
 
-![thumbnail](https://github.com/Wojciech-Florczak/frontend-portfolio/thumbnail.png)
+![thumbnail](thumbnail.png)
 
 ## Goal
 I'm recreating a website based on a photo of the template.  
