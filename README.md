@@ -2,6 +2,12 @@
 
 ![thumbnail](thumbnail.png)
 
+## Description
+Personal website for Front-End Developer made with plain HTML and CSS.  
+Responsive design, no JavaScript, frameworks and tools were used.  
+Website use normalize.css for better browser support, and font awesome for icons.  
+Contact form is not working, as this is static site, but it's ready to be used in future.
+
 ## Goal
 I'm recreating a website based on a photo of the template.  
 This exercise is part of the coding assignment which I have to complete to participate in the bootcamp.
