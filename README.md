@@ -17,8 +17,8 @@ This exercise is part of the coding assignment which I have to complete to parti
 ## Different branches
 
 I decided to make two branches in this repository.  
-The first one will have raw version of project with placeholder images and text.  
-The second one will have version filled with my personal data.
+The master branch contains raw version of the project with placeholder images and text.  
+The filled branch contains version filled with my personal data.
 
 ## Glitch.com
 
